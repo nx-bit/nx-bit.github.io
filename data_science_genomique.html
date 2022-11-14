@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projet de data science autour des données génomiques.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Naxan Sewduth</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+						<li><a href="index.html">Accueil</a></li>
+							<li><a href="https://www.data.gouv.fr/fr/posts/que-se-dit-il-dans-les-commentaires-sur-data-gouv-fr/#:~:text=Le%20syst%C3%A8me%20de%20commentaires%20de,mentions%20ou%20encore%20de%20mod%C3%A9ration."> Valorisation data.gouv.fr</a></li>
+                            <li><a href="https://www.comtecdev.com/video-category/colloque-ia/">Colloque sur l'IA en Afrique</a></li>
+                            <li><a href="data_science_genomique.html">Projet data science </a></li>
+                            <li><a href="https://lpmind2021.medium.com/opendatasph%C3%A8re-un-projet-collaboratif-autour-de-lopen-data-francophone-2359c5c445be">Cartographie open data </a></li>
+                            <li><a href="timeline.html">Timeline datavisualisation</a></li>
+                            <li><a href="https://archives.bordeaux-metropole.fr/c-etait-ici/carte/n:48">Carte évolution lieux Bordeaux </a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Projet de data science autour des données génomiques.</h1>
+                            	<p><i>L’ensemble des mots relatifs à la bio informatique, à la génétique et à la data-science sont disponibles dans un lexique classé en ordre alphabétique à la fin du document.</i></p>
+                                <p>L’objectif de mon stage au sein du Vlaams Instituut voor Biotechnologie et de l’université KU Leuven était de réaliser un modèle en R capable de détecter un ARN codant et non codant. Cette étude a pour objectif de fournir un outil aux biologistes qui souhaitent traiter en grandes quantités les ARN. Dans un premier temps, j'ai travaillé sur l’ARN non codant. L’objectif était d’isoler les codons responsables de la production de protéines. Afin de repérer ces différentes séquences, j’ai utilisé les codons ouvrants et fermant de la synthèse de protéines. </p>
+                                <p><i>Pour un développeur, cette action s’apparente au repérage et à l’extraction de string avec pour point de départ et de fin des lettres spécifiques.</i></p>
+                                <p><b>Schéma de la production de protéines à partir de l’ARN</b> </p>
+                                <span class="image main"><img src="images/image1.png" alt="" /></span>
+                                <p><font size="-2">Naxan Sewduth CC BY-SA 2.0</font></p>
+                                <p>Dans un second temps, je voulais calculer le pourcentage d’apparition de chaque nucléotide dans la position des codons. J’ai donc réalisé ce travail pour les codons A, U, C et G pour chaque position possible dans le codon. Par la suite, j'ai réalisé le même procédé sur l’ARN codant. J’ai récupéré la liste des séquences réalisant la synthèse de protéines pour déterminer le pourcentage d’apparition de chaque nucléotide dans la position des codons.</p>
+
+                                <p><i>Pour un développeur, cette action s’apparente à des statistiques avec l’utilisation de vecteurs.</i> </p>
+
+                                <br>
+                                <span ><img src="images/image4.png" width="775" height="375" alt="" /></span>
+                                <p><font size="-2">Naxan Sewduth CC BY-SA 2.0</font></p>
+
+                                <br>
+                                <p>Enfin, j’ai travaillé sur un modèle de prédiction de l’ARN codant et non codant en utilisant l’algorithme k plus proches voisins. Dans un premier temps, j'ai entrainé mon modèle en utilisant les distances entre les valeurs de l’ARN codant et non codant afin de créer deux groupes. Dans un second temps, j’ai utilisé mon modèle pour déterminer la catégorie d’un nouvel ARN en fonction de ces voisins. J’ai ainsi fait la comparaison pour déterminer le groupe en utilisant 5 voisins (k=5). Mon stage prenant fin, je n’ai pas pu déterminer le taux d’erreurs de mon modèle afin d’ajuster le nombre de K pour avoir un résultat minimisant les erreurs. </p>
+
+                                <p><i>Pour un développeur, cette action s’apparente à la création d’un modèle mathématique de prédiction en utilisant le k-nearest neighbors algorithm.</i></p>
+
+                                <span class="image main"><img src="images/image2.png"  alt="" /></span>
+                                <p><font size="-2">Naxan Sewduth CC BY-SA 2.0</font></p>
+
+                                
+                                <p>Ce stage m’a permis d’améliorer mes aptitudes en Data science. J’ai eu également l’occasion de découvrir la bio-informatique.</p>
+
+                                <br>
+                                <h2>Lexique : </h2>
+
+                                <p>ARN : L'acide ribonucléique ou ARN est une molécule indispensable à la vie. Cette molécule ressemble beaucoup à l'acide désoxyribonucléique (ADN), car elle est composée de quatre bases azotées dont trois communes à l'ADN et à l'ARN : A (adénine), G (guanine) et C (cytosine). Le T (thymine), de l'ADN est remplacé dans l'ARN par un U (uracile).</p>
+
+                                <p>ARNm ou ARN messager : L’ARNm est un sous ensemble de l’ARN. Il est composé des nucléotides qui produisent des protéines. </p>
+
+                                
+                                <p>ARN non codant : Un ARN non codant (ou ARNnm pour ARN non messager) est un ARN, issu de la transcription de l'ADN, qui ne sera pas traduit en protéine par les ribosomes.</p>
+
+                                
+                                <p>Codon : Un codon est un ensemble de trois nucléotides.</p>
+
+                                
+                                <p>Codon-start : Le codon-start est un triplet de nucléotides qui marque le début de la traduction de l’ARN messager en protéine.</p>
+
+                                
+                                <p>Codon-stop : Un codon-stop est un triplet de nucléotides qui marquent la fin de la traduction de l’ARN messager en protéine.</p>
+
+                                
+                                <p>K plus proches voisins : Les ‘k plus proches voisins’ ou k-nearest neighbors en anglais (d’où l’appellation knn) est une méthode non paramétrique dans laquelle le modèle mémorise les observations de l’ensemble d’apprentissage pour la classification des données de l’ensemble de test.</p>
+
+                                <p>Cet algorithme est qualifié de paresseux (Lazy Learning) car il n’apprend rien pendant la phase d’entraînement. Pour prédire la classe d’une nouvelle donnée d’entrée, il va chercher ses K voisins les plus proches (en utilisant la distance euclidienne) et choisira la classe des voisins majoritaires.</p>
+
+                                
+                                <p>Nucléotide : Ce sont les éléments de base d'un acide nucléique.</p>
+
+                                
+                                <p>Ribosome : Les ribosomes sont des enzymes cellulaires qui assurent la traduction des ARN messagers en protéines.</p>
+
+                                
+                                <h2>Sources : </h2>
+
+                                
+                                <p>L’ensemble des informations de l’index sauf la note sur le K plus proches voisins viennent de Wikipédia et de Vikidia. </p>
+
+                                
+                                <p>La note sur l’algorithme k plus proches voisins vient d’un <a href="https://medium.com/@kenzaharifi/bien-comprendre-lalgorithme-des-k-plus-proches-voisins-fonctionnement-et-impl%C3%A9mentation-sur-r-et-a66d2d372679" >article de Kenza Harifi</a> Data Scientiste a la BNP Paribas.</p>
+
+                                
+                                <p>Pour aller plus loin, cette <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3616698/" >publication</a> aborde le même thème de manière plus complète et moins vulgariser. </p>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Naxan Sewduth : Attribution-ShareAlike 2.0 Generic (CC BY  SA 2.0)</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
